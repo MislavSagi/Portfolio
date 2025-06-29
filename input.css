@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "flowbite/src/themes/default";
+
+@plugin "flowbite/plugin";
+
+@source "../node_modules/flowbite";
+
+@theme {
+    --color-primary: #C0EAFF;
+    --color-secondary: #F38567;
+    --color-test: #FFFDCA;
+    --color-switch: #CBBD93;
+     --color-switch2: #FFF5B8;
+  }
+
+
+  .triangle-clip {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
