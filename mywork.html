@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <title>myWork</title>
+</head>
+
+<body id="home" id="body" style="font-family: Poppins, sans-serif;" class="bg-primary transition-colors duration-350 ease-in scroll-smooth overflow-x-hidden">
+
+
+
+
+  <nav  class="static bg-white h-20 flex items-center justify-evenly text-lg -z-30 xl:fixed w-full z-50">
+   <a  href="mywork.html"><p class="cursor-pointer hover:border-b-4 border-secondary duration-100">My Work.</p></a>
+     <a href="index.html" href="#about"><p onclick="scrollToSection()"  class="cursor-pointer hover:border-b-4 border-secondary duration-100">About Me</p></a>
+      <a href="index.html"><p onclick="scrollToSection()"  class="cursor-pointer hover:border-b-4 border-secondary duration-100">Home</p></a>
+
+  </nav>
+
+  <!--socials-->
+<div id="sticky" class="sticky top-[90%] flex justify-center z-50 absolute">
+  <div class="content-center flex justify-center gap-3.5 z-50 p-2 rounded-2xl bg-white shadow xl:w-110 gap-8">
+    <a href="mywork.html"><button class="hidden xl:block p-3 cursor-pointer border-2 border-gray-300 rounded-2xl hover:bg-secondary hover:text-white duration-700">My Work.</button></a>
+    <a target="_blank" href="mailto:mislavshagi@gmail.com"><img src="Images/Gmail.png" alt="Gmail" class="w-10 h-10 hover:scale-110 hover:ring-2 hover:ring-red-500 transition duration-300 rounded-full cursor-pointer"></a>
+    <a target="_blank" href="https://www.upwork.com/freelancers/~013d9a8ba9bb0871d5"><img src="Images/upwork.png" alt="Upwork" class="w-10 h-10 hover:scale-110 hover:ring-2 hover:ring-black-500 transition duration-300 rounded cursor-pointer"></a>
+    <a target="_blank" href="https://www.linkedin.com/in/mislav-sagi-4721812b9/"><img src="Images/Linkedin.png" alt="Linkedin" class="w-10 h-10 hover:scale-110 hover:ring-2 hover:ring-blue-500 transition duration-300 rounded-full cursor-pointer"></a>
+  <a href="index.html"><button onclick="scrollToSection()" class="hidden xl:block p-3 cursor-pointer border-2 border-gray-300  rounded-2xl hover:bg-secondary hover:text-white duration-700">Home</button></a>
+  </div>
+</div>
+
+
+<!--website 1-->
+<section id="website1" class="mb-30">
+<!--Websites-->
+<div id="navLinks" class="hidden xl:absolute xl:flex justify-center translate-y-20 gap-28 right-2/8 z-50">
+  <p onclick="showWebsite('website1')" id="bionavis" class="text-secondary cursor-pointer text-lg ">BioNaVis</p>
+  <p onclick="showWebsite('website2')" id="puretaste"  class="xl:cursor-pointer text-lg ">Pure Taste</p>
+  <p onclick="showWebsite('website3')" class="cursor-pointer text-lg">Portfolio</p>
+</div>
+
+
+<!--Title desktop-->
+  <div class="hidden xl:block ml-10 fixed ml-30 absolute" >
+    <h1 class="block text-secondary font-bold text-5xl mt-20">mywork.</h1>   
+
+</div>
+
+
+<!--Title mobile-->
+  <div class="ml-10 xl:hidden">
+    <h1 class="block text-secondary font-bold text-5xl">mywork.</h1>
+    <div class="mt-10 flex gap-10 xl:hidden">
+      <p class="text-secondary" onclick="showWebsite('website1')">BioNaVis</p>
+      <p onclick="showWebsite('website2')">Pure Taste</p>
+      <p onclick="showWebsite('website3')">Portfolio</p>
+    </div>
+  </div>
+
+
+  <div class="xl:flex">
+<div class="static xl:w-1/3 flex-col fixed mt-20 ml-20">
+<!--websites-->
+
+  
+  <!--Client-->
+  <div class="-mt-8 -ml-10 xl:fixed mt-20 ml-10">
+      <p ><span class="font-semibold -ml-20 xl:ml-0">Client</span>: BioNaVis</p>
+    </div>
+
+
+
+
+
+<!-- Made With Mobile -->
+<div class="flex mt-4 -ml-10 xl:fixed xl:mt-36 xl:ml-10 gap-2">
+  <p class="font-semibold mr-4 w-6">Made With:</p>  
+  <img src="Images/figma.png" alt="figma icon" class="h-16 xl:h-auto">
+  <img src="Images/Wordpress.png" alt="WordPress icon" class="h-16 xl:h-auto">
+  <img src="Images/woocommerce.png" alt="woocommerce icon" class="h-16 xl:h-auto">
+  <img src="Images/elementor.png" alt="elementor icon" class="h-16 xl:w-14 xl:h-auto">
+</div>
+
+
+        
+        
+       
+
+      <!--about website Mobile-->
+    <div class="w-80 -ml-10 mt-5 mr-5 text-lg xl:hidden">
+     <p><span class="font-semibold">PROJECT GOAL</span>: To design a creative, unique, and authentic website for my client's company and brand.<br>
+
+<span class="font-semibold">PROBLEMS</span>: Too low or too high resolution images, content not fitting the design, balancing aesthetics and usability.<br>
+
+<span class="font-semibold">SOLUTIONS</span>:
+- For the unfitting images, I used Canva to resize and change the aspect ratio so it could be aesthetically integrated in the design.
+- I requested an initial meeting with my client to talk about important topics such as their ideas, aspirations, and overall business dreams and goals, so I could use that as the foundation for the website's vibe and authenticity.</p>
+    </div>
+
+
+      <!--about website Desktop-->
+
+    <div class="xl:fixed ">
+        <div class="hidden xl:block ml-10 mt-60 w-80">
+     <p><span class="font-semibold">PROJECT GOAL</span>: To design a creative, unique, and authentic website for my client's company and brand.<br>
+
+<span class="font-semibold">PROBLEMS</span>: Too low or too high resolution images, content not fitting the design, balancing aesthetics and usability.<br>
+
+<span class="font-semibold">SOLUTIONS</span>:
+- For the unfitting images, I used Canva to resize and change the aspect ratio so it could be aesthetically integrated in the design.
+- I requested an initial meeting with my client to talk about important topics such as their ideas, aspirations, and overall business dreams and goals, so I could use that as the foundation for the website's vibe and authenticity.</p>
+    </div>
+</div>
+
+</div>
+
+
+<!---->
+     <div>
+
+     </div>
+    <!--website image-->
+    <div class="flex justify-center xl:relative top-0">
+      <img class="mt-10 w-90 rounded-2xl xl:hidden" src="Images/Brojne.comMobile.avif" alt="BionaVis Website">
+       <img class="hidden xl:block rounded-2xl w-[70%] mt-40" src="Images/brojne Desktop.webp" alt="BionaVis Website">
+    </div>
+
+</div>
+</div>
+
+  
+</div>
+
+</section>
+
+
+<!--website 2-->
+<section id="website2" class="hidden">
+<!--Websites-->
+<div id="navLinks" class="hidden xl:absolute xl:flex justify-center translate-y-20 gap-28 right-2/8 z-50">
+  <p onclick="showWebsite('website1')" class=" cursor-pointer text-lg">BioNaVis</p>
+  <p onclick="showWebsite('website2')" class="text-secondary xl:cursor-pointer text-lg">Pure Taste</p>
+  <p onclick="showWebsite('website3')" class="cursor-pointer text-lg">Portfolio</p>
+</div>
+
+
+<!--Title desktop-->
+  <div class="hidden xl:block ml-10 fixed ml-30 absolute" >
+    <h1 class="block text-secondary font-bold text-5xl mt-20">mywork.</h1>   
+
+</div>
+
+
+<!--Title mobile-->
+  <div class="ml-10 xl:hidden">
+    <h1 class="block text-secondary font-bold text-5xl">mywork.</h1>
+    <div class="mt-10 flex gap-10 xl:hidden">
+      <p onclick="showWebsite('website1')">BioNaVis</p>
+      <p class="text-secondary" onclick="showWebsite('website2')">Pure Taste</p>
+      <p onclick="showWebsite('website3')">Portfolio</p>
+    </div>
+  </div>
+
+
+  <div class="xl:flex">
+<div class="static xl:w-1/3 flex-col fixed mt-20 ml-20">
+<!--websites-->
+
+  
+  <!--Client-->
+  <div class="-mt-8 -ml-10 xl:fixed mt-20 ml-10">
+      <p ><span class="font-semibold -ml-20 xl:ml-0">Client</span>: PureTaste</p>
+    </div>
+
+
+
+
+
+<!-- Made With Mobile -->
+<div class="flex mt-4 -ml-10 xl:fixed xl:mt-36 xl:ml-10 gap-2">
+  <p class="font-semibold mr-4 w-6">Made With:</p>  
+  <img src="Images/figma.png" alt="figma icon" class="h-16 xl:h-auto">
+  <img src="Images/html.png" alt="WordPress icon" class="h-16 xl:h-auto">
+  <img src="Images/css.png" alt="woocommerce icon" class="h-16 xl:h-auto">
+  <img src="Images/js.png" alt="elementor icon" class="h-16 xl:w-14 xl:h-auto">
+</div>
+
+
+        
+        
+       
+
+      <!--about website Mobile-->
+    <div class="w-80 -ml-10 mt-5 mr-5 text-lg xl:hidden">
+     <p><span class="font-semibold">PROJECT</span>: Website for Pure Taste Coffee Shop<br>
+
+<span class="font-semibold">PROJECT GOAL</span>:
+The client requested a clean, minimalistic website design without animations. The primary challenge was to maintain simplicity while 
+effectively conveying the authenticity and character of the coffee shop.<br>
+
+<span class="font-semibold">MY APPROACH</span>:
+I collaborated closely with the client to understand their vision, preferences, and goals. Using this insight, I developed a custom, 
+visually appealing design that reflects the brand’s identity and enhances its online presence.</p>
+    </div>
+
+
+      <!--about website Desktop-->
+
+    <div class="xl:fixed ">
+        <div class="hidden xl:block ml-10 mt-60 w-80">
+     <p><span class="font-semibold">PROJECT</span>: Website for Pure Taste Coffee Shop<br>
+
+<span class="font-semibold">PROJECT GOAL</span>:
+The client requested a clean, minimalistic website design without animations. The primary challenge was to maintain simplicity while 
+effectively conveying the authenticity and character of the coffee shop.<br>
+
+<span class="font-semibold">MY APPROACH</span>:
+I collaborated closely with the client to understand their vision, preferences, and goals. Using this insight, I developed a custom, 
+visually appealing design that reflects the brand’s identity and enhances its online presence.</p>
+    </div>
+</div>
+
+</div>
+
+
+<!---->
+     <div>
+
+     </div>
+    <!--website image-->
+    <div class="flex justify-center xl:relative top-0">
+      <img class="mt-10 w-90 rounded-2xl xl:hidden" src="Images/PureTasteMobile.png" alt="BionaVis Website">
+       <img class="hidden xl:block rounded-2xl w-[65%] mt-40 translate-x-10" src="Images/PureTaste.png" alt="BionaVis Website">
+    </div>
+
+</div>
+</div>
+
+
+
+</section>
+
+<!--website 3-->
+<section id="website3" class="hidden">
+<!--Websites-->
+<div id="navLinks" class="hidden xl:absolute xl:flex justify-center translate-y-20 gap-28 right-2/8 z-50">
+  <p onclick="showWebsite('website1')" class="cursor-pointer text-lg">BioNaVis</p>
+  <p onclick="showWebsite('website2')" class="xl:cursor-pointer text-lg">Pure Taste</p>
+  <p onclick="showWebsite('website3')" class="text-secondary cursor-pointer text-lg">Portfolio</p>
+</div>
+
+
+<!--Title desktop-->
+  <div class="hidden xl:block ml-10 fixed ml-30 absolute" >
+    <h1 class="block text-secondary font-bold text-5xl mt-20">mywork.</h1>   
+
+</div>
+
+
+<!--Title mobile-->
+  <div class="ml-10 xl:hidden">
+    <h1 class="block text-secondary font-bold text-5xl">mywork.</h1>
+    <div class="mt-10 flex gap-10 xl:hidden">
+      <p onclick="showWebsite('website1')" class="cursor-pointer">BioNaVis</p>
+  <p onclick="showWebsite('website2')" class="xl:cursor-pointer">Pure Taste</p>
+  <p onclick="showWebsite('website3')" class="text-secondary cursor-pointer">Portfolio</p>
+    </div>
+  </div>
+
+
+  <div class="xl:flex">
+<div class="static xl:w-1/3 flex-col fixed mt-20 ml-20">
+<!--websites-->
+
+  
+  <!--Client-->
+  <div class="-mt-8 -ml-10 xl:fixed mt-20 ml-10">
+      <p ><span class="font-semibold -ml-20 xl:ml-0">Client</span>: Personal</p>
+    </div>
+
+
+
+
+
+<!-- Made With Mobile -->
+<div class="flex mt-4 -ml-10 xl:fixed xl:mt-36 xl:ml-10 gap-2">
+  <p class="font-semibold mr-4 w-6">Made With:</p>  
+  <img src="Images/figma.png" alt="figma icon" class="h-16 xl:h-auto">
+  <img src="Images/html.png" alt="WordPress icon" class="h-16 xl:h-auto">
+  <img src="Images/Tailwind.png" alt="woocommerce icon" class="h-12 w-15 xl:h-14 w-16">
+  <img src="Images/js.png" alt="elementor icon" class="h-16 xl:w-14 xl:h-auto">
+</div>
+
+
+        
+        
+       
+
+      <!--about website Mobile-->
+    <div class="w-80 -ml-10 mt-5 mr-5 text-lg xl:hidden">
+     <p><span class="font-semibold">PROJECT GOAL</span>: To design a creative, unique, and authentic website for my client's company and brand.<br>
+
+<span class="font-semibold">PROBLEMS</span>: Too low or too high resolution images, content not fitting the design, balancing aesthetics and usability.<br>
+
+<span class="font-semibold">SOLUTIONS</span>:
+- For the unfitting images, I used Canva to resize and change the aspect ratio so it could be aesthetically integrated in the design.
+- I requested an initial meeting with my client to talk about important topics such as their ideas, aspirations, and overall business dreams and goals, so I could use that as the foundation for the website's vibe and authenticity.</p>
+    </div>
+
+
+      <!--about website Desktop-->
+
+    <div class="xl:fixed ">
+        <div class="hidden xl:block ml-10 mt-60 w-80">
+     <p><span class="font-semibold">PROJECT GOAL</span>: To design a creative, unique, and authentic website for my client's company and brand.<br>
+
+<span class="font-semibold">PROBLEMS</span>: Too low or too high resolution images, content not fitting the design, balancing aesthetics and usability.<br>
+
+<span class="font-semibold">SOLUTIONS</span>:
+- For the unfitting images, I used Canva to resize and change the aspect ratio so it could be aesthetically integrated in the design.
+- I requested an initial meeting with my client to talk about important topics such as their ideas, aspirations, and overall business dreams and goals, so I could use that as the foundation for the website's vibe and authenticity.</p>
+    </div>
+</div>
+
+</div>
+
+
+<!---->
+     <div>
+
+     </div>
+    <!--website image-->
+    <div class="flex justify-center xl:relative top-0">
+      <img class="mt-10 w-90 rounded-2xl xl:hidden" src="Images/Portfolio Mobile.png" alt="BionaVis Website">
+       <img class="hidden xl:block rounded-2xl w-[65%] mt-40 translate-x-10" src="Images/Portfolio Desktop.png" alt="BionaVis Website">
+    </div>
+
+</div>
+</div>
+
+
+
+</section>
+
+
+     <script src="Mywork.js"></script>
+    <script src="index.js"></script>
+   <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

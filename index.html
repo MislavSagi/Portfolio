@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <title>Mislav Sagi Portfolio Page</title>
+</head>
+
+<body id="home" id="body" style="font-family: Poppins, sans-serif;" class="bg-primary transition-colors duration-350 ease-in scroll-smooth overflow-x-hidden">
+
+
+
+
+  <nav  class=" bg-white h-20 flex items-center justify-evenly text-lg -z-30 xl:w-full">
+   <a  href="mywork.html"><p class="cursor-pointer hover:border-b-4 border-secondary duration-100">My Work.</p></a>
+      <a href="#about"><p onclick="scrollToSection()"  class="cursor-pointer hover:border-b-4 border-secondary duration-100">About Me</p></a>
+   <a href="#contact"><p onclick="scrollToSection()"  class="cursor-pointer hover:border-b-4 border-secondary duration-100">Contact</p> </a>
+  </nav>
+
+  
+
+
+
+
+
+ 
+
+
+
+
+<!---
+Title and subtitle
+-->
+<div class="flex-col justify-center">
+<p class="mt-8 w-full text-xl text-center">I’m <span class="font-semibold">Mislav</span>, a developer who <span class="text-red-600 font-bold">GIVES A DAMN</span>.</p>
+<h1 class="mt-2 text-4xl text-center w-full"><span class="font-light">I build websites that are fast, focused, and effective.</h1>
+</div>
+
+     <!---Triangle decor-->
+                  <section  class="hidden xl:flex mt-16 -z-10 absolute -translate-x-92">
+                      <div id="triangle" class="triangle  bg-secondary w-202 h-202 p-8 justify-center items-center rotate-45 -translate-x-30 transition-colors duration-350 ease-in">
+
+                     </div>
+                      </section>
+       
+  
+
+<!---
+Laptop images
+-->
+
+<div class="hidden xl:flex mt-5 justify-center">
+<img src="Images/MacBook Pro.png" alt="Laptop image" class="xl: text-center content-center object-center absolute -z-10" >
+<div class="xl:mt-5 w-full flex justify-center -translate-x-105 translate-y-55 z-10">
+<img src="Images/Google Pixel 2.png" alt="Mobile phone" class="text-center content-center object-center absolute" >
+
+
+
+</div>
+
+</div>
+
+ 
+<!--Slide for Desktop-->
+
+
+<div class="hidden xl:block -translate-y-20 justify-center md:mt-12 left-1/2 top-1/3">
+<div id="default-carousel" class="absolute -z-50 left-1/2 -translate-x-1/2 w-174" data-carousel="slide">
+  <div class="relative h-126 overflow-hidden rounded-lg md:h-126 xl:h-106 translate-y-7.5">
+    <!-- Slide 1 (Active) -->
+    <div  data-carousel-item class="slide duration-200 ease-in-out">
+      <img src="Images/BioNaVisMainDesktop.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="website one">
+    </div>
+    <!-- Slide 2 -->
+    <div  data-carousel-item class="slide duration-200 ease-in-out">
+      <img src="Images/PureTasteMain.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="website two">
+    </div>
+    <!-- Slide 3 -->
+    <div data-carousel-item class="slide duration-200 ease-in-out">
+      <img src="Images/PortfolioDesktop.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="website three">
+    </div>
+  </div>
+    <!-- Slider indicators -->
+    <div class="-mb-30 absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" disabled class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" disabled class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" disabled class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="hidden absolute top-0 -start-18 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none " data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="hidden absolute top-0 -end-18 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+</div>
+
+
+<!--Phone slide desktop-->
+<div class="hidden xl:block translate-y-40 -translate-x-105.5 justify-center md:mt-15 relative z-[9999]">
+  <div id="carousel2" class="absolute left-1/2 -translate-x-1/2 w-56 z-[9999]" data-carousel="slide">
+    <div class="relative h-156 overflow-hidden rounded-lg md:h-126 xl:h-106 translate-y-7.5">
+      <!-- Slide 1 (Active) -->
+      <div data-carousel-item class="active duration-400 ease-in-out">
+        <img src="Images/BioNaVisMainMobile.webp"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="website one">
+      </div>
+      <!-- Slide 2 -->
+      <div data-carousel-item class="active duration-400 ease-in-out">
+        <img src="Images/PureTasteMobileMain.webp"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-60 h-105"
+          alt="website two">
+      </div>
+      <!-- Slide 3 -->
+      <div data-carousel-item class="active duration-400 ease-in-out">
+        <img src="Images/PortfolioMobile.webp"
+          class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="website three">
+      </div>
+    </div>
+    <!-- Slider indicators -->
+    <div
+      class="hidden -mb-30 absolute z-[9999] -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+        data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+        data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+        data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="hidden absolute top-0 -start-18 z-[9999] items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 1 1 5l4 4" />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="hidden absolute top-0 -end-18 z-[9999] items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 9 4-4-4-4" />
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+</div>
+
+
+
+<!--Phone image-->
+<div class="mt-5 w-full flex justify-center xl:hidden">
+<img src="Images/Google Pixel 2.png" alt="Mobile phone" class=" text-center content-center object-center absolute" >
+
+</div>
+
+
+
+<!-- Slide-->
+
+<div class="-translate-y-20 flex justify-center md:mt-15 xl:hidden">
+<div id="default-carousel" class="relative w-56 " data-carousel="slide">
+  <div class="relative h-156 overflow-hidden rounded-lg md:h-126">
+    <!-- Slide 1 (Active) -->
+    <div class="hidden duration-500 ease-in-out" data-carousel-item="active">
+      <img src="Images/BioNaVisMainMobile.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-105 w-50 rounded-2xl" alt="BioNaVis mobile">
+    </div>
+    <!-- Slide 2 -->
+    <div class="hidden duration-500 ease-in-out" data-carousel-item>
+      <img src="Images/PureTasteMobileMain.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-105 w-50 rounded-2xl" alt="PureTaste website">
+    </div>
+    <!-- Slide 3 -->
+    <div class="hidden duration-500 ease-in-out" data-carousel-item>
+      <img src="Images/kutija-nova-scaled.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+  </div>
+    <!-- Slider indicators -->
+    <div class="mb-8 absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse md:-mb-6">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 -start-15 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 -end-15 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+</div>
+<!--End Slide-->
+
+
+<!---View Projects-->
+<div class="flex justify-center">
+<a href="mywork.html"><p class="-mt-28 text-center xl:mt-115  cursor-pointer w-50 hover:border-b-2 border-gray-600 lg:">View Projects <span class="text-2xl">→</span></p></a>
+</div>
+
+
+
+<!--Lets work button-->
+<div class=" xl:flex gap-4 flex justify-center mt-5">
+    <a href="mailto:mislavshagi@gmail.com"><button class="-mt-20 relative flex h-18 w-80 border-2 rounded-4xl items-center justify-center
+     overflow-hidden cursor-pointer bg-white text-black shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full
+      before:bg-secondary before:duration-800 before:ease-out hover:shadow-secondary hover:before:h-106 hover:before:w-106 hover:text-white
+      xl:mt-5 mb-10">
+      <span class="relative z-10"> Let's work together!</span>
+    </button></a>
+
+
+
+
+
+
+
+</div>
+<!--End of devide-->
+
+
+                        <!---Triangle decor right side-->
+                       
+        <div class="overflow-hidden w-screen h-350 pt-50 absolute top-2 xl:h-350 -z-50">
+                       <section class="absolute -z-10 xl:absolute right-0 flex -z-10 xl:-translate-x-150">
+                  <div id="triangleR" class=" triangle bg-secondary w-[25rem] h-[25rem] p-5 justify-center items-center rotate-45 
+                  translate-x-[120%] transition-colors duration-350 ease-in xl:w-[70rem] h-[70rem] overflow-x-hidden">
+                    </div>
+                     </section>
+             </div>
+            </div>
+
+
+                        <!---Triangle decor two right side-->
+                       
+        <div class="overflow-hidden w-screen h-350 pt-50 absolute top-250 xl:top-380 h-350 -z-50" >
+                       <section class="absolute -z-10 xl:absolute right-0 flex -z-10 xl:-translate-x-100"">
+                  <div id="triangleR" class=" triangle bg-secondary w-[25rem] h-[25rem] p-5 justify-center items-center rotate-45 
+                  translate-x-[120%] transition-colors duration-350 ease-in xl:w-[70rem] h-[70rem] overflow-x-hidden">
+                    </div>
+                     </section>
+             </div>
+            </div>
+
+            <!---Triangle decor bottom right side-->
+                       
+        <div class="overflow-hidden w-screen h-350 pt-50 absolute top-900 xl:top-900 -z-50" >
+                       <section class="absolute -z-10 xl:absolute right-0 flex -z-10 xl:-translate-x-80">
+                  <div id="triangleR" class=" triangle bg-secondary w-[25rem] h-[25rem] p-5 justify-center items-center rotate-45 
+                  translate-x-[120%] transition-colors duration-350 ease-in xl:w-[70rem] h-[70rem] overflow-x-hidden">
+                    </div>
+                     </section>
+             </div>
+            </div>
+        
+            <!-- Triangle Container -->
+
+<!-- Triangle Container on Top: Desktop Only -->
+<div class="hidden xl: absolute -top-50 right-60 w-full h-full -z-50 overflow-visible">
+  <div class="absolute right-[-10rem] top-[-10rem]">
+    <div
+      id="triangleR"
+      class="bg-secondary w-[40rem] h-[40rem] rotate-45"
+    ></div>
+  </div>
+</div>
+
+
+            
+            
+            <!---Socials-->
+
+<div id="sticky" class="sticky top-[90%] flex justify-center z-50 ">
+  <div class="content-center flex justify-center gap-3.5 z-50 p-2 rounded-2xl bg-white shadow xl:w-110 gap-8">
+    <a href="mywork.html"><button class="hidden xl:block p-3 cursor-pointer border-2 border-gray-300 rounded-2xl hover:bg-secondary hover:text-white duration-700">My Work.</button></a>
+    <a target="_blank" href="mailto:mislavshagi@gmail.com"><img src="Images/Gmail.png" alt="Gmail" class="w-10 h-10 hover:scale-110 hover:ring-2 hover:ring-red-500 transition duration-300 rounded-full cursor-pointer"></a>
+    <a target="_blank" href="https://www.upwork.com/freelancers/~013d9a8ba9bb0871d5"><img src="Images/upwork.png" alt="Upwork" class="w-10 h-10 hover:scale-110 hover:ring-2 hover:ring-black-500 transition duration-300 rounded cursor-pointer"></a>
+    <a target="_blank" href="https://www.linkedin.com/in/mislav-sagi-4721812b9/"><img src="Images/Linkedin.png" alt="Linkedin" class="w-10 h-10 hover:scale-110 hover:ring-2 hover:ring-blue-500 transition duration-300 rounded-full cursor-pointer"></a>
+  <button onclick="scrollToSection()" class="hidden xl:block p-3 cursor-pointer border-2 border-gray-300  rounded-2xl hover:bg-secondary hover:text-white duration-700">Home</button>
+  </div>
+</div>
+
+          
+
+
+
+<!--- how i help-->
+<div class="flex flex-col items-center justify-center text-center">
+  <h1 class="mt-5 w-full text-3xl">How I Help Your <br>Business</h1>
+  <p class="mt-3 w-10/12 max-w-xl text-xl">
+    Your website is more than just a brochure, it's your most powerful marketing tool. <br>
+    I help businesses turn their online presence into real-world results by building websites that are:
+  </p>
+</div>
+
+
+
+                 <!---Triangle decor-->
+                  <section  class="flex mt-16 -z-10 absolute -translate-x-24 xl:translate-y-50">
+                      <div id="triangle" class="triangle  bg-secondary w-102 h-102 p-8 justify-center items-center rotate-45 -translate-x-30 transition-colors duration-350 ease-in">
+
+                     </div>
+                      </section>
+       
+
+
+
+<!--How i help Mobile-->
+  <section class="xl:hidden">             
+<!--- Business Strategy-->
+<div class="mt-16 flex justify-center text-center">
+<div>
+
+  <h2 class="mt-2 w-full text-3xl text-left">Strategic</h2>
+<p class="mt-4 w-full text-left">Every site I build is <br>designed with your goals <br>in mind, whether that’s <br>generating leads, <br>increasing sales, or <br>building brand trust.</p>
+
+</div>
+
+<div>
+<img src="Images/Chart.png" alt="laptop icon" class="mt-14 ml-8 h-28">
+</div>
+
+</div>
+
+<!---SEO-->
+
+<div class="mt-15 mr-2 flex justify-center" >
+
+<div class="ml-5">
+<img src="Images/laptop icon.png" alt="laptop icon" class="mt-10">
+</div>
+
+<div>
+
+  <h2 class="mt-2 ml-5 w-11/12 text-3xl text-left">SEO & <br>Performance <br>Optimized</h2>
+<p class="mt-4 ml-6 w-11-12 text-left">Every site is build and<br>designed with your goals <br>in mind, whether that’s <br>generating leads, <br>increasing sales, or <br>building brand trust.</p>
+
+</div>
+
+</div>
+
+
+
+<!---Respondsivenes-->
+
+<div class="mt-16  flex justify-center">
+<div>
+
+  <h2 class="mt-2 w-full ml-8 text-3xl text-left">Responsiveness</h2>
+<p class="mt-4 w-full ml-8  text-left">Over half of web traffic <br>comes from mobile. <br>Making sure your site <br>looks and works <br>flawlessly across all devices, <br>so you don’t miss a single <br>opportunity.</p>
+
+</div>
+
+<div>
+<img src="Images/Chart2.png" alt="laptop icon" class="mt-14 mL-1 h-24">
+</div>
+
+</div>
+
+     
+<!---Support-->
+
+<div class="mt-16 flex justify-center">
+
+<div>
+<img src="Images/Support.png" alt="laptop icon" class="mr-4 mt-10">
+</div>
+
+<div>
+
+  <h2 class="mt-2 ml-2 w-full text-3xl text-left">Support & <br>Maintenance</h2>
+<p class="mt-4 ml-2 w-full text-left">I provide continuous <br>maintenance and <br>updates to ensure your <br>website remains secure, <br>efficient, and aligned <br>with your business goals.
+</p>
+
+</div>
+
+</div>
+</section>       
+
+
+
+<!--How i help Desktop-->
+  <section class="hidden xl:block">    
+    
+    <div class="flex justify-center">
+<!--- Business Strategy-->
+<div class="mt-16 flex justify-center text-center">
+<div>
+
+  <h2 class="mt-2 w-full text-3xl text-left">Strategic</h2>
+<p class="mt-4 w-full text-left text-lg">Every site I build is <br>designed with your goals <br>in mind, whether that’s <br>generating leads, <br>increasing sales, or <br>building brand trust.</p>
+
+</div>
+
+<div>
+<img src="Images/Chart.png" alt="laptop icon" class="mt-14 ml-8 h-28">
+</div>
+
+</div>
+
+<!---Respondsivenes-->
+<div class="mt-16  flex justify-center">
+<div>
+
+  <h2 class="mt-2 w-full ml-8 text-3xl text-left">Responsiveness</h2>
+<p class="mt-4 w-full ml-8  text-left text-lg">Over half of web traffic <br>comes from mobile. <br>Making sure your site <br>looks and works <br>flawlessly across all devices, <br>so you don’t miss a single <br>opportunity.</p>
+
+</div>
+
+<div>
+<img src="Images/Chart2.png" alt="laptop icon" class="mt-14 mL-1 h-24">
+</div>
+
+</div>
+</div>
+
+
+<div class="flex justify-center">
+<!---SEO-->
+<div class="mt-15 mr-2 flex justify-center" >
+
+<div class="ml-5">
+<img src="Images/laptop icon.png" alt="laptop icon" class="mt-10">
+</div>
+
+<div>
+
+  <h2 class="mt-2 ml-5 w-11/12 text-3xl text-left">SEO & <br>Performance <br>Optimized</h2>
+<p class="mt-4 ml-6 w-11-12 text-left text-lg">Every site is build and<br>designed with your goals <br>in mind, whether that’s <br>generating leads, <br>increasing sales, or <br>building brand trust.</p>
+
+</div>
+
+</div>
+
+<!---Support-->
+
+<div class="mt-16 flex justify-center">
+
+<div>
+<img src="Images/Support.png" alt="laptop icon" class="mr-4 mt-10">
+</div>
+
+<div>
+
+  <h2 class="mt-2 ml-2 w-full text-3xl text-left">Support & <br>Maintenance</h2>
+<p class="mt-4 ml-2 w-full text-left text-lg">I provide continuous <br>maintenance and <br>updates to ensure your <br>website remains secure, <br>efficient, and aligned <br>with your business goals.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>  
+
+
+
+                    <!---Triangle decor-->
+                     <section  class="flex mt-16 -z-10 absolute -translate-x-65 xl:-translate-x-80">
+                      <div id="triangle2"  class=" bg-secondary w-102 h-102 p-8 justify-center items-center rotate-45 -translate-x-30 transition-colors duration-350 ease-in xl:w-202 h-202">
+
+                     </div>
+                      </section>
+       
+
+
+
+               <!---Tool kit-->
+                   <div>
+                    <h1 class="mt-22 w-full text-3xl text-center">Tools I Use to Build <br>Fast, Modern Websites</h1>
+                    <h3 class="mt-4 w-full text-xl text-center">Every tool I use is chosen to <br>solve a problem, whether it’s <br>speed, search rankings, or <br>user experience. </h3>
+             
+                    <div class="flex justify-center gap-3 mt-5">
+                    <img class="hover:animate-shake"  src="Images/html.png" alt="html icon">
+                     <img src="Images/css.png" alt="Css icon">
+                      <img src="Images/js.png" alt="JavaScript icon">
+                       <img src="Images/php.png" alt="php icon">
+                        <img src="Images/Wordpress.png" alt="Wordpress icon">
+                         </div>
+                               <div class="flex justify-center gap-3 mt-3.5">
+                    <img src="Images/woocommerce.png" alt="Woocommerce icon">
+                     <img src="Images/Tailwind.png" alt="Tailwind icon" class="h-12">
+                      <img src="Images/git.png" alt="Git icon">
+                       <img src="Images/figma.png" alt="figma icon">
+                         </div>
+                    </div>
+
+            <!---CTA--> 
+<section id="content" class="py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div
+      class="group relative overflow-hidden lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-gray-600 to-violet-900 flex items-center justify-between flex-col lg:flex-row"
+    >
+
+      <!-- Wave background -->
+      <div
+        class="absolute -top-20 -left-1/4 w-[150%] h-[150%] bg-indigo-400 opacity-20 rounded-full blur-3xl scale-0 group-hover:scale-100 transition-transform duration-700 ease-out z-0"
+      ></div>
+
+      <!-- Content -->
+      <div class="block text-center mb-5 lg:text-left lg:mb-0 z-10">
+        <h2 class="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2">
+          Let’s build something amazing together!
+        </h2>
+        <p class="text-xl text-indigo-100">
+          Looking for a fast, reliable developer? I’m open for work!
+        
+        </p>
+      </div>
+
+      <a
+        href="mailto:mislavshagi@gmail.com"
+        class="z-10 flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500 hover:bg-secondary"
+      >
+        Get In Touch
+        <svg
+          width="19"
+          height="14"
+          viewBox="0 0 19 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
+            stroke="#4F46E5"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+             <!--FAQ-->
+
+         <div
+    class="relative w-full bg-black text-white px-6 pt-10 pb-14 shadow-xl ring-1 ring-gray-900/5 sm:max-w-full sm:px-10">
+    <div class="mx-auto px-5 w-full">
+        <div class="flex flex-col items-center">
+            <h2 class="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
+            <p class="mt-3 text-lg text-neutral-400 md:text-xl">Frequenty asked questions
+
+            </p>
+        </div>
+        <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                        <span>What kind of projects do you work on?</span>
+                        <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                      </summary>
+                    <p class="group-open:animate-fadeIn mt-3 text-neutral-400">I build digital experiences that are <span class=" text-neutral-200">fast</span>, <span class=" text-neutral-200">sharp</span>, and <span class=" text-neutral-200">built to perform</span>.<br><br>
+                      • <span class=" text-neutral-200">Responsive websites</span> that actually work on all screens — not just “look decent”<br>
+                      • <span class=" text-neutral-200">E-commerce</span> stores that load fast, convert better, and don’t break under pressure<br>
+                      • <span class=" text-neutral-200">Custom web apps</span> and slick, interactive UIs that make users want to stick around<br>
+                      • <span class=" text-neutral-200">Portfolio sites</span> and <span class=" text-neutral-200">personal brands</span> that leave a mark (and don’t look like a template)<br>
+                      • <span class=" text-neutral-200">CMS</span> builds on platforms like <span class=" text-neutral-200">WordPress</span>, <span class=" text-neutral-200">Shopify</span>, or whatever gets the job done right<br>
+                      • <span class=" text-neutral-200">Website redesigns</span> & <span class=" text-neutral-200">performance upgrades</span> that take your existing site from “meh” to whoa
+
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                        <span>How long does it take?</span>
+                        <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                    </summary>
+                    <p class="group-open:animate-fadeIn mt-3 text-neutral-400"> Typically, a <span class=" text-neutral-200">basic website</span> design and development can
+                        take anywhere from <span class=" text-neutral-200">1 to 3 weeks</span>.<br>The timeline for each project varies
+                       depending on its complexity and scope. More complex projects, like <span class=" text-neutral-200">e-commerce </span>sites or <span class=" text-neutral-200">custom web
+                         applications</span>, may take <span class=" text-neutral-200">4 weeks</span> or longer. <br><br>I always provide a detailed timeline during the
+                          project planning phase to ensure clear expectations and smooth delivery.
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                        <span>What’s your process like?</span>
+                        <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                    </summary>
+                    <p class="group-open:animate-fadeIn mt-3 text-neutral-400">My process is designed to keep you <span class=" text-neutral-200">involved</span> and <span class=" text-neutral-200">informed</span> every step of the way. It typically includes: <br>
+                      • <span class=" text-neutral-200">Discovery & Planning</span>: Understanding your <span class=" text-neutral-200">goals</span>, <span class=" text-neutral-200">target audience</span>, and project requirements.<br>
+                      • <span class=" text-neutral-200">Design</span>: Creating <span class=" text-neutral-200">wireframes</span> and <span class=" text-neutral-200">visual designs</span> for your review and feedback.<br>
+                      • <span class=" text-neutral-200">Development</span>: Turning designs into a fully functional website with <span class=" text-neutral-200">clean</span>, <span class=" text-neutral-200">efficient code</span>.<br>
+                      • <span class=" text-neutral-200">Testing</span>: Ensuring your site works <span class=" text-neutral-200">smoothly</span> across all devices and browsers.<br>
+                      • <span class=" text-neutral-200">Launch</span>: Deploying the website live and making sure everything runs <span class=" text-neutral-200">perfectly</span>.<br>
+                      • <span class=" text-neutral-200">Support</span>: Offering ongoing <span class=" text-neutral-200">maintenance</span> and <span class=" text-neutral-200">updates</span> as needed.<br>
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                        <span>Do you offer ongoing support and maintenance?</span>
+                        <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                    </summary>
+                    <p class="group-open:animate-fadeIn mt-3 text-neutral-400">Yes, I offer <span class=" text-neutral-200">ongoing support</span> packages
+                       that include <span class=" text-neutral-200">updates</span>, <span class=" text-neutral-200">backups</span>, <span class=" text-neutral-200">performance checks</span>, and <span class=" text-neutral-200">minor content changes</span>. 
+                       I’m also available for <span class=" text-neutral-200">one-time updates</span> or feature additions as your site grows.
+
+
+                    </p>
+                </details>
+            </div>
+            <div class="py-5">
+                <details class="group">
+                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                        <span>How much does a project cost?</span>
+                        <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                    </summary>
+                    <p class="group-open:animate-fadeIn mt-3 text-neutral-400">Pricing depends on the project’s
+                       size and complexity. <span class=" text-neutral-200">Basic websites</span> typically start around <span class=" text-neutral-200">$350–$600</span>, with <span class=" text-neutral-200">custom</span> or 
+                       <span class=" text-neutral-200">e-commerce</span> solutions <span class=" text-neutral-200">ranging higher</span>. I’ll provide a detailed quote after understanding 
+                       your needs.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Testimonials--> 
+
+<section style="font-family: Epilogue, sans-serif;" class="bg-test px-4 py-12 md:py-24 shadow-2xl">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12 mt-4">Testimonials</h2>
+    <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4 relative">
+      <div class="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+        
+        <p class="text-xl font-light italic text-gray-700">Working with Mislav was a fantastic experience. I needed a website that not only 
+          showcased my handmade fig cake but also made it incredibly easy for customers to order and that’s exactly what I got. The design is beautiful and intuitive. I’ve already seen an increase in online orders thanks to the site. Highly recommended!"</p>
+          <p class="font-bold mt-3">Vesna M.</p>
+            <p class="font-light mt-1">Owner of Bio na Vis</p>
+        <div class="flex items-center justify-center space-x-2 mt-4">
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <div class="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+     
+        <p class="text-xl font-light italic text-gray-700">"Working with Mislav was great. He was very communicative, understanding and quick."</p>   
+          <p class="font-bold mt-3">Marija M.</p>
+            <p class="font-light mt-1">Owner of Pure Taste</p>
+        <div class="flex items-center justify-center space-x-2 mt-4">
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <div class="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+        
+        <p class="text-xl font-light italic text-gray-700">Mislav was quick to grasp what I wanted done and executed it in a timely manner with high quality.
+Im already planning my next project with him.</p>
+          <p class="font-bold mt-3">Amir H.</p>
+            <p class="font-light mt-1">Upwork Client</p>
+        <div class="flex items-center justify-center space-x-2 mt-4">
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81 .588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+          <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81 .588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+            <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81 .588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+            <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+            fill="currentColor" stroke="currentColor">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81 .588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--About me-->
+
+                 <!---Triangle decor-->
+                  <section class="flex mt-38 -z-10 absolute -translate-x-24">
+                      <div class="bg-secondary w-102 h-102 p-8 justify-center items-center rotate-45 -translate-x-30">
+
+                     </div>
+                      </section>
+       
+
+<div id="my-target"  class="flex justify-center mt-20">
+
+<img src="Images/Profile.png" alt="Profile picture">
+
+
+</div>
+
+
+<h1  class="text-center text-2xl xl:text-3xl">About me</h1>
+<div class="flex justify-center">
+<p class="text-lg w-11/12 mt-5 max-w-2xl xl:max-w-3xl text-xl">Hi, I’m <span class="font-bold">Mislav</span> a Croatian freelance web developer with a background in precision engineering and a strong focus on building clean, fast, and SEO-friendly websites that get results.
+Before transitioning into web development, I spent 5 years as a CNC operator and programmer, working on high-spec components for companies like <span class="font-bold">Rimac Automobili</span> and <span class="font-bold">Lingl Solead GMBH.</span> 
+That experience taught me the value of precision, teamwork, and solving problems under pressure skills I bring into every web project. If you’re looking for a reliable partner to bring your website to life, 
+I’d love to help you build something that reflects your vision and helps your business grow.</p>
+</div>
+<div class="flex justify-center mt-5">
+
+  
+<!--Lets work button-->
+<div class="flex-col flex justify-center">
+    <a class="flex justify-center mt-5" href="mailto:mislavshagi@gmail.com">
+      <button class="relative flex h-18 w-80 border-2 rounded-4xl items-center justify-center
+     overflow-hidden cursor-pointer bg-white text-black shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full
+      before:bg-secondary before:duration-800 before:ease-out hover:shadow-secondary hover:before:h-106 hover:before:w-106 hover:text-white xl:ml-7">
+      <span class="relative z-10 ">Contact Me</span>
+    </button></a>
+    
+
+
+    
+<div class=" w-full h-30  flex justify-center"></div>
+
+
+ <p class="-mt-20 mb-30 text-xl text-center">Based in Croatia · Available worldwide</p>
+<p class="-translate-y-25 text-center">© 2025 Mislav S. All rights reserved</p>
+</footer>
+<!---
+    <section class="flex ">
+    <div class="bg-secondary w-102 h-102 p-8 justify-center items-center rotate-45 -translate-x-30">
+
+    </div>
+</section>
+
+
+-->
+    <script src="index.js"></script>
+   <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
